@@ -1,0 +1,64 @@
+
+## customers ##
+api_customer_view:
+    path:     /customer/{customer_id}
+    defaults: { _controller: ApiBundle:Customer:view }
+    methods:  [GET]
+
+api_customer_new:
+    path:     /customer
+    defaults: { _controller: ApiBundle:Customer:new }
+    methods:  [POST]
+
+api_customer_delete:
+    path:     /customer/{customer_id}
+    defaults: { _controller: ApiBundle:Customer:delete }
+    methods:  [DELETE]
+
+api_customer_edit:
+    path:     /customer/{customer_id}
+    defaults: { _controller: ApiBundle:Customer:edit }
+    methods:  [PUT]
+
+
+## restaurant ##
+api_restaurant_view:
+    path:     /restaurant/{restaurant_id}
+    defaults: { _controller: ApiBundle:Restaurant:view }
+    methods:  [GET]
+
+api_restaurant_new:
+    path:     /restaurant
+    defaults: { _controller: ApiBundle:Restaurant:new }
+    methods:  [POST]
+
+api_restaurant_delete:
+    path:     /restaurant/{restaurant_id}
+    defaults: { _controller: ApiBundle:Restaurant:delete }
+    methods:  [DELETE]
+
+api_restaurant_edit:
+    path:     /restaurant/{restaurant_id}
+    defaults: { _controller: ApiBundle:Restaurant:edit }
+    methods:  [PUT]
+
+## reservation ##
+api_reservation_view:
+    path:     /reservation/{reservation_id}
+    defaults: { _controller: ApiBundle:Reservation:view }
+    methods:  [GET]
+
+api_reservation_new:
+    path:     /reservation
+    defaults: { _controller: ApiBundle:Reservation:new }
+    methods:  [POST]
+
+api_reservation_delete:
+    path:     /reservation/{restaurant_id}
+    defaults: { _controller: ApiBundle:Reservation:delete }
+    methods:  [DELETE]
+
+api_reservation_edit:
+    path:     /reservation/{restaurant_id}
+    defaults: { _controller: ApiBundle:Reservation:edit }
+    methods:  [PUT]
